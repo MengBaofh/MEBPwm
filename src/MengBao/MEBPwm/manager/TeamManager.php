@@ -69,7 +69,7 @@ class TeamManager
         $name = $player->getName();
         if (isset($this->tpCooldown[$name]) && time() - $this->tpCooldown[$name] < self::TELEPORT_COOLDOWN) {
             $remain = self::TELEPORT_COOLDOWN - (time() - $this->tpCooldown[$name]);
-            $player->sendMessage("§c传送冷却中！剩余 {$remain} 秒后可再次传送。");
+            $player->sendMessage("§cTeleport is cooling down! You can teleport again in {$remain} seconds.");
             return false;
         }
         // 更新冷却时间
