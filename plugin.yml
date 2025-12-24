@@ -1,0 +1,20 @@
+name: MEBPwm
+main: MengBao\MEBPwm\Main
+version: 1.0.0
+depend: [FormAPI]
+softdepend: [MEBsociety, EconomyAPI, BedrockEconomy]
+api: 
+- 5.0.0
+load: POSTWORLD
+author: MengBao
+website: 
+description: Play with me!.
+
+permissions:
+ MEBPwm.ge:
+  default: true
+  description: General command
+ MEBPwm.op:
+  default: op
+  description: Op command
+ 
