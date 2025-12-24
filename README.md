@@ -81,4 +81,49 @@ A feature-rich PocketMine plugin that enables seamless companion services on Min
 - 离线缓存：若任意一方离线，评价入口将缓存至其下次上线，确保评价流程完整。  
 ## 兼容性说明  
 - 支持的 PocketMine API 版本：【5.x.x】  
-- 依赖：FormAPI, https://github.com/jojoe77777/FormAPI 
+- 依赖：FormAPI, https://github.com/jojoe77777/FormAPI
+# 结构  
+src/  
+└── MengBao/  
+    └── MEBPwm/  
+        ├── Main.php                            # 主入口类  
+        ├── command/  
+        │   └── PwmCommand.php                  # 指令处理类  
+        ├── economy/  
+        │   └── EconomyAdapter.php              # 经济适配器类  
+        ├── listener/  
+        │   └── PlayerEventListener.php         # 事件监听类  
+        ├── manager/  
+        │   ├── ApplyManager.php                # 申请管理  
+        │   ├── OfflineRatingManager.php        # 离线评分管理  
+        │   ├── OfflineRenewalManager.php       # 离线续约管理  
+        │   ├── OfflineSettleManager.php        # 离线结算管理  
+        │   ├── RecruitManager.php              # 招募管理  
+        │   ├── OrderManager.php                # 订单管理  
+        │   ├── RatingManager.php               # 评分管理  
+        │   ├── PlayTimeManager.php             # 时长管理  
+        │   ├── TempAccountManager.php          # 临时账户管理  
+        │   ├── TeamManager.php                 # 组队管理  
+        │   └── LanguageManager.php             # 多语言管理  
+        ├── form/  
+        │   ├── ApplyForm.php                   # 申请表单  
+        │   ├── MainMenuForm.php                # 主菜单表单  
+        │   ├── PendingSettleForm.php           # 待结算订单表单  
+        │   ├── PublishForm.php                 # 发布招募表单  
+        │   ├── RecruitListForm.php             # 招募列表表单  
+        │   ├── RankForm.php                    # 时长榜单表单  
+        │   ├── RatingForm.php                  # 评分表单  
+        │   ├── RenewalForm.php                 # 续约表单  
+        │   ├── SettleForm.php                  # 结算表单  
+        │   └── traits/                         # 表单共用Traits  
+        │       └── RecruitDetailFormTrait.php  # 招募详情表单Trait  
+        └── task/  
+            ├── ExpirePendingRecruitsTask.php   # 过期pending招募任务  
+            ├── CleanExpiredApplyTask.php       # 清理过期申请任务  
+            ├── CleanExpiredRORTask.php         # 清理过期招募/订单/离线任务  
+            └── OrderTimerTask.php              # 订单计时任务  
+resources/  
+├── language/                 # 语言文件目录  
+│   ├── zh_CN.yml             # 简体中文  
+│   └── en_US.yml             # 英文  
+└── config.yml                 # 插件主配置文件  
