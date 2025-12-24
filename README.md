@@ -1,4 +1,4 @@
-# Play With Me - PocketMine Companion Plugin  
+# Play With Me - PocketMine Companion Plugin - V_English  
 A feature-rich PocketMine plugin that enables seamless companion services on Minecraft servers, supporting recruitment, teaming, timing, settlement, and reputation management for both employers and companions.
 # Core Features
 ✅ Command (/pw) to launch GUI for intuitive operation  
@@ -40,7 +40,7 @@ A feature-rich PocketMine plugin that enables seamless companion services on Min
 ## Compatibility
 - Supported PocketMine API Versions: [5.x.x]
 - Dependency: FormAPI, https://github.com/jojoe77777/FormAPI
-# Play With Me - PocketMine 陪玩插件
+# Play With Me - PocketMine 陪玩插件 - V_中文
 一款功能丰富的 PocketMine 插件，为 Minecraft 服务器提供便捷的陪玩服务，支持雇主与陪玩者的招募对接、组队联动、计时管理、结算支付及信誉体系全流程功能。
 # 核心特性
 ✅ 指令（/pw）唤醒图形界面，操作直观便捷  
@@ -82,48 +82,48 @@ A feature-rich PocketMine plugin that enables seamless companion services on Min
 ## 兼容性说明  
 - 支持的 PocketMine API 版本：【5.x.x】  
 - 依赖：FormAPI, https://github.com/jojoe77777/FormAPI
-# 结构  
+# 插件结构  
 src/  
 └── MengBao/  
-    └── MEBPwm/  
-        ├── Main.php                            # 主入口类  
-        ├── command/  
-        │   └── PwmCommand.php                  # 指令处理类  
-        ├── economy/  
-        │   └── EconomyAdapter.php              # 经济适配器类  
-        ├── listener/  
-        │   └── PlayerEventListener.php         # 事件监听类  
-        ├── manager/  
-        │   ├── ApplyManager.php                # 申请管理  
-        │   ├── OfflineRatingManager.php        # 离线评分管理  
-        │   ├── OfflineRenewalManager.php       # 离线续约管理  
-        │   ├── OfflineSettleManager.php        # 离线结算管理  
-        │   ├── RecruitManager.php              # 招募管理  
-        │   ├── OrderManager.php                # 订单管理  
-        │   ├── RatingManager.php               # 评分管理  
-        │   ├── PlayTimeManager.php             # 时长管理  
-        │   ├── TempAccountManager.php          # 临时账户管理  
-        │   ├── TeamManager.php                 # 组队管理  
-        │   └── LanguageManager.php             # 多语言管理  
-        ├── form/  
-        │   ├── ApplyForm.php                   # 申请表单  
-        │   ├── MainMenuForm.php                # 主菜单表单  
-        │   ├── PendingSettleForm.php           # 待结算订单表单  
-        │   ├── PublishForm.php                 # 发布招募表单  
-        │   ├── RecruitListForm.php             # 招募列表表单  
-        │   ├── RankForm.php                    # 时长榜单表单  
-        │   ├── RatingForm.php                  # 评分表单  
-        │   ├── RenewalForm.php                 # 续约表单  
-        │   ├── SettleForm.php                  # 结算表单  
-        │   └── traits/                         # 表单共用Traits  
-        │       └── RecruitDetailFormTrait.php  # 招募详情表单Trait  
-        └── task/  
-            ├── ExpirePendingRecruitsTask.php   # 过期pending招募任务  
-            ├── CleanExpiredApplyTask.php       # 清理过期申请任务  
-            ├── CleanExpiredRORTask.php         # 清理过期招募/订单/离线任务  
-            └── OrderTimerTask.php              # 订单计时任务  
+&emsp;&emsp;└── MEBPwm/  
+&emsp;&emsp;&emsp;&emsp;├── Main.php                            # 主入口类  
+&emsp;&emsp;&emsp;&emsp;├── command/  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;└── PwmCommand.php                  # 指令处理类  
+&emsp;&emsp;&emsp;&emsp;├── economy/  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;└── EconomyAdapter.php              # 经济适配器类  
+&emsp;&emsp;&emsp;&emsp;├── listener/  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;└── PlayerEventListener.php         # 事件监听类  
+&emsp;&emsp;&emsp;&emsp;├── manager/  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── ApplyManager.php                # 申请管理  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── OfflineRatingManager.php        # 离线评分管理  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── OfflineRenewalManager.php       # 离线续约管理  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── OfflineSettleManager.php        # 离线结算管理  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── RecruitManager.php              # 招募管理  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── OrderManager.php                # 订单管理  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── RatingManager.php               # 评分管理  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── PlayTimeManager.php             # 时长管理  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── TempAccountManager.php          # 临时账户管理  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── TeamManager.php                 # 组队管理  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;└── LanguageManager.php             # 多语言管理  
+&emsp;&emsp;&emsp;&emsp;├── form/  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── ApplyForm.php                   # 申请表单  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── MainMenuForm.php                # 主菜单表单  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── PendingSettleForm.php           # 待结算订单表单  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── PublishForm.php                 # 发布招募表单  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── RecruitListForm.php             # 招募列表表单  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── RankForm.php                    # 时长榜单表单  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── RatingForm.php                  # 评分表单  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── RenewalForm.php                 # 续约表单  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;├── SettleForm.php                  # 结算表单  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;└── traits/                         # 表单共用Traits  
+&emsp;&emsp;&emsp;&emsp;│&emsp;&emsp;&emsp;&emsp;└── RecruitDetailFormTrait.php  # 招募详情表单Trait  
+&emsp;&emsp;&emsp;&emsp;└── task/  
+&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;├── ExpirePendingRecruitsTask.php   # 过期pending招募任务  
+&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;├── CleanExpiredApplyTask.php       # 清理过期申请任务  
+&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;├── CleanExpiredRORTask.php         # 清理过期招募/订单/离线任务  
+&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;└── OrderTimerTask.php              # 订单计时任务  
 resources/  
 ├── language/                 # 语言文件目录  
-│   ├── zh_CN.yml             # 简体中文  
-│   └── en_US.yml             # 英文  
+│&emsp;&emsp;├── zh_CN.yml             # 简体中文  
+│&emsp;&emsp;└── en_US.yml             # 英文  
 └── config.yml                 # 插件主配置文件  
