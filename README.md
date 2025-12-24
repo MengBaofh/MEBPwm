@@ -37,7 +37,7 @@ A feature-rich PocketMine plugin that enables seamless companion services on Min
 - Temporary Accounts: The system generates a temporary account for each companion order; rewards are calculated based on task completion (filled in by the employer) and distributed.
 - Two-way Rating: After the companion service ends, both parties can rate each other, supporting text reviews + star ratings.
 - Offline Caching: If either party is offline, the rating entry is cached until their next login to ensure the completion of the rating process.
-## Compatibility
+## 6. Compatibility
 - Supported PocketMine API Versions: [5.x.x]
 - Dependency: FormAPI, https://github.com/jojoe77777/FormAPI
 # Play With Me - PocketMine 陪玩插件 - V_中文
@@ -79,7 +79,7 @@ A feature-rich PocketMine plugin that enables seamless companion services on Min
 - 临时账户：系统为每笔陪玩订单生成独立临时账户，报酬按任务完成度（由雇主填写）核算后自动发放。  
 - 双向评价：陪玩服务结束后，双方可相互评价，支持文字评论 + 星级评分双重维度。  
 - 离线缓存：若任意一方离线，评价入口将缓存至其下次上线，确保评价流程完整。  
-## 兼容性说明  
+## 6. 兼容性说明  
 - 支持的 PocketMine API 版本：【5.x.x】  
 - 依赖：FormAPI, https://github.com/jojoe77777/FormAPI
 # 插件结构  
