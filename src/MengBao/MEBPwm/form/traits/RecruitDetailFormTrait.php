@@ -54,7 +54,7 @@ trait RecruitDetailFormTrait
         $duration = $recruit['duration'] ?? 0;
         $reward = $recruit['reward'] ?? 0;
         $createTime = $recruit['create_time'] ?? time();
-        $rating = $plugin->getRatingManager()->getAvgRating($employerName) ?? 0;
+        $rating = $plugin->getRatingManager()->getAvgRating($employerName);
         $createTimeStr = date("Y-m-d H:i:s", $createTime);
         $form->setTitle($lang->get("recruit_detail_title"));
         $form->setContent(
