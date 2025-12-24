@@ -39,7 +39,7 @@ A feature-rich PocketMine plugin that enables seamless companion services on Min
 - Offline Caching: If either party is offline, the rating entry is cached until their next login to ensure the completion of the rating process.
 ## Compatibility
 - Supported PocketMine API Versions: [5.x.x]
-- Depend: FormAPI, https://github.com/jojoe77777/FormAPI
+- Dependency: FormAPI, https://github.com/jojoe77777/FormAPI
 # Play With Me - PocketMine 陪玩插件
 一款功能丰富的 PocketMine 插件，为 Minecraft 服务器提供便捷的陪玩服务，支持雇主与陪玩者的招募对接、组队联动、计时管理、结算支付及信誉体系全流程功能。
 # 核心特性
