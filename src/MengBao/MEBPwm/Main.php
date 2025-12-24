@@ -108,7 +108,6 @@ class Main extends PluginBase
     /** @var LanguageManager 多语言管理器 */
     private LanguageManager $languageManager;
 
-    private int $maxEmploy;
 
     public function onEnable(): void
     {
@@ -252,8 +251,5 @@ class Main extends PluginBase
         // 插件内部资源目录（phar包内/源码目录）的language文件夹
         return $this->getPluginRootPath() . "language/";
     }
-    public function getMaxEmploy(): int
-    {
-        return $this->maxEmploy;
-    }
+
 }
