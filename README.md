@@ -1,4 +1,4 @@
-![logo](https://github.com/MengBaofh/MEBPwm/blob/master/MEBPwm.png)
+![logo](https://github.com/MengBaofh/MEBPwm/blob/main/MEBPwm.png)  
 # Play With Me - PocketMine Companion Plugin - V_English  
 A feature-rich PocketMine plugin that enables seamless companion services on Minecraft servers, supporting recruitment, teaming, timing, settlement, and reputation management for both employers and companions.
 # Core Features
