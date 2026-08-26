@@ -7,7 +7,7 @@ use pocketmine\player\Player;
 use MengBao\MEBPwm\Main;
 use MengBao\MEBPwm\form\{MainMenuForm, PublishForm, RecruitListForm, RankForm};
 // use cooldogedev\BedrockEconomy\api\BedrockEconomyAPI;
-use MengBao\MEBsociety\Units\Economy;
+use MengBao\MEBSociety\Units\Economy;
 
 class PwmCommand extends Command implements CommandExecutor
 {
@@ -27,7 +27,7 @@ class PwmCommand extends Command implements CommandExecutor
         $this->lang = $plugin->getLanguageManager(); // 语言管理器
         $this->setPermission("MEBPwm.ge");
         // 获取MEBSociety插件实例和经济实例
-        $mebPlugin = $plugin->getServer()->getPluginManager()->getPlugin("MEBsociety");
+        $mebPlugin = $plugin->getServer()->getPluginManager()->getPlugin("MEBSociety");
         $this->economy = Economy::getInstance($mebPlugin);
     }
 

@@ -3,7 +3,7 @@
 namespace MengBao\MEBPwm\form;
 
 use pocketmine\player\Player;
-use jojoe77777\FormAPI\SimpleForm;
+use MengBao\MEBForms\SimpleForm;
 use MengBao\MEBPwm\Main;
 use MengBao\MEBPwm\form\{PublishForm, ApplyForm, PendingSettleForm, RecruitListForm, RankForm};
 

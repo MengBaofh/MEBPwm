@@ -2,7 +2,7 @@
 namespace MengBao\MEBPwm\form\traits;
 
 use pocketmine\player\Player;
-use jojoe77777\FormAPI\SimpleForm;
+use MengBao\MEBForms\SimpleForm;
 use MengBao\MEBPwm\Main;
 
 /**

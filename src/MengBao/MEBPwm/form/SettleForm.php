@@ -2,7 +2,7 @@
 namespace MengBao\MEBPwm\form;
 
 use pocketmine\player\Player;
-use jojoe77777\FormAPI\CustomForm;
+use MengBao\MEBForms\CustomForm;
 use MengBao\MEBPwm\Main;
 use MengBao\MEBPwm\economy\EconomyAdapter;
 
@@ -57,7 +57,7 @@ class SettleForm {
             // 5. 执行经济结算（转账给陪玩者）
             $companion = $order["player"];
             if (!$economy->isAvailable()) {
-                $employer->sendMessage("§c错误：未检测到可用的经济插件（MEBsociety/EconomyAPI）！");
+                $employer->sendMessage("§c错误：未检测到可用的经济插件（MEBSociety/EconomyAPI）！");
                 return;
             }
 

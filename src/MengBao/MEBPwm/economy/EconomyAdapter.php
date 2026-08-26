@@ -3,13 +3,13 @@ namespace MengBao\MEBPwm\economy;
 
 use pocketmine\Server;
 
-// 经济适配器类，支持 MEBsociety、EconomyAPI 和 BedrockEconomy 插件
+// 经济适配器类，支持 MEBSociety、EconomyAPI 和 BedrockEconomy 插件
 class EconomyAdapter {
     private static $instance = null;
     private $economyPlugin;
     private $type;
 
-    const TYPE_MEBSOCIETY = "MEBsociety";
+    const TYPE_MEBSOCIETY = "MEBSociety";
     const TYPE_ECONOMYAPI = "EconomyAPI";
     const TYPE_BEDROCK = "BedrockEconomy";
     const TYPE_NONE = "None";
@@ -28,8 +28,8 @@ class EconomyAdapter {
     private function detectEconomyPlugin() {
         $pluginManager = Server::getInstance()->getPluginManager();
         
-        if ($pluginManager->getPlugin("MEBsociety") !== null) {
-            $this->economyPlugin = $pluginManager->getPlugin("MEBsociety");
+        if ($pluginManager->getPlugin("MEBSociety") !== null) {
+            $this->economyPlugin = $pluginManager->getPlugin("MEBSociety");
             $this->type = self::TYPE_MEBSOCIETY;
         } elseif ($pluginManager->getPlugin("EconomyAPI") !== null) {
             $this->economyPlugin = $pluginManager->getPlugin("EconomyAPI");
@@ -46,7 +46,7 @@ class EconomyAdapter {
     public function getMoney(string $playerName): float {
         switch ($this->type) {
             case self::TYPE_MEBSOCIETY:
-                return \MengBao\MEBsociety\Units\Economy::getInstance($this->economyPlugin)->getMoney(strtolower($playerName));
+                return \MengBao\MEBSociety\Units\Economy::getInstance($this->economyPlugin)->getMoney(strtolower($playerName));
             case self::TYPE_ECONOMYAPI:
                 return $this->economyPlugin->myMoney($playerName);
             case self::TYPE_BEDROCK:
@@ -59,7 +59,7 @@ class EconomyAdapter {
     public function addMoney(string $playerName, float $amount): bool {
         switch ($this->type) {
             case self::TYPE_MEBSOCIETY:
-                return \MengBao\MEBsociety\Units\Economy::getInstance($this->economyPlugin)->addMoney(strtolower($playerName), $amount) === 1;
+                return \MengBao\MEBSociety\Units\Economy::getInstance($this->economyPlugin)->addMoney(strtolower($playerName), $amount) === 1;
             case self::TYPE_ECONOMYAPI:
                 $this->economyPlugin->addMoney($playerName, $amount);
                 return true;

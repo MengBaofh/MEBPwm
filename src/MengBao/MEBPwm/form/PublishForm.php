@@ -5,7 +5,7 @@ namespace MengBao\MEBPwm\form;
 use pocketmine\player\Player;
 use MengBao\MEBPwm\listener\PlayerEventListener;
 
-use jojoe77777\FormAPI\CustomForm;
+use MengBao\MEBForms\CustomForm;
 use MengBao\MEBPwm\Main;
 use MengBao\MEBPwm\economy\EconomyAdapter;
 
@@ -15,9 +15,9 @@ class PublishForm
     {
         $lang = Main::getInstance()->getLanguageManager();
         // 获取MEBSociety插件实例和经济实例
-        $mebPlugin = $player->getServer()->getPluginManager()->getPlugin("MEBsociety");
+        $mebPlugin = $player->getServer()->getPluginManager()->getPlugin("MEBSociety");
         if ($mebPlugin === null) {
-            $player->sendMessage($lang->get("plugin_not_found", ["plugin" => "MEBsociety"]));
+            $player->sendMessage($lang->get("plugin_not_found", ["plugin" => "MEBSociety"]));
             return;
         }
         $economy = EconomyAdapter::getInstance();

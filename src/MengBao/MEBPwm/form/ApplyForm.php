@@ -6,7 +6,7 @@ use pocketmine\player\Player;
 
 use MengBao\MEBPwm\Main;
 use MengBao\MEBPwm\manager\ApplyManager;
-use jojoe77777\FormAPI\SimpleForm;
+use MengBao\MEBForms\SimpleForm;
 
 class ApplyForm
 {

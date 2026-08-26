@@ -1,8 +1,8 @@
 name: MEBPwm
 main: MengBao\MEBPwm\Main
-version: 1.0.0
-depend: [FormAPI]
-softdepend: [MEBsociety, EconomyAPI, BedrockEconomy]
+version: 1.1.0
+depend: [MEBForms]
+softdepend: [MEBSociety, EconomyAPI, BedrockEconomy]
 api: 
 - 5.0.0
 load: POSTWORLD

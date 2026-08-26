@@ -2,8 +2,8 @@
 namespace MengBao\MEBPwm\form;
 
 use pocketmine\player\Player;
-use jojoe77777\FormAPI\SimpleForm;
-use jojoe77777\FormAPI\CustomForm;
+use MengBao\MEBForms\SimpleForm;
+use MengBao\MEBForms\CustomForm;
 use MengBao\MEBPwm\Main;
 use MengBao\MEBPwm\form\traits\RecruitDetailFormTrait;
 
