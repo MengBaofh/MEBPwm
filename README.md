@@ -1,6 +1,10 @@
-![logo](https://github.com/MengBaofh/MEBPwm/blob/main/MEBPwm.png)  
 # Play With Me - PocketMine Companion Plugin - V_English  
 A feature-rich PocketMine plugin that enables seamless companion services on Minecraft servers, supporting recruitment, teaming, timing, settlement, and reputation management for both employers and companions.
+
+[![PocketMine-MP](https://img.shields.io/badge/PocketMine--MP-5.0-blue)](https://github.com/pmmp/PocketMine-MP)
+[![PHP](https://img.shields.io/badge/PHP-8.0%2B-purple)](https://www.php.net/)
+[![MEB交流群](https://img.shields.io/badge/MEB交流群-495262926-orange?style=flat-square&logo=tencentqq)](https://qun.qq.com/universal-share/share?ac=1&authKey=HJqOZiQeXeja5NyPiqbfbPPRGX6UdRYf%2FZ8jxAr5B52Bl8a2L4ZqpgQ4%2FZ2JTQ%2BG&busi_data=eyJncm91cENvZGUiOiI0OTUyNjI5MjYiLCJ0b2tlbiI6Imh4Q01pWkpkQVgvekFSK0cwbTJjWU5xdHFBMGJJN01qQVN6SmhRMUZHTmcwRzNBOXpvdlArcW1EaTRNcFI1MEsiLCJ1aW4iOiI4MjU1ODUzOTgifQ%3D%3D&data=_H46ENc_fxiIeBZm8xNKqFoGMVQ2ZbAayO2_xLQ7-24neRXx2M6uoWZqOCk2iPBw_MgYalDv4PNB8uOLvhl3ww&svctype=4&tempid=h5_group_info)
+
 # Core Features
 ✅ Command (/pw) to launch GUI for intuitive operation  
 ✅ Two-way Reputation System for secure transactions  
